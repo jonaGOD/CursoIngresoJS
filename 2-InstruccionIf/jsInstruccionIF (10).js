@@ -6,7 +6,7 @@ function mostrar()
 	alert(numero);
 	if (numero>=9) {
 		alert("EXCELETE");
-	} else if (numero>4 && numero<9) {
+	} else if (numero>=4 && numero<9) {
 		alert("APROBÓ")
 	} else {
 		alert("Vamos la próxima se puede")
