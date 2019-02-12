@@ -12,6 +12,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 var cantLamparitas
 var precioLamparitas
 var marca
+var precioFinal
 
 function CalcularPrecio () 
 {
@@ -21,5 +22,45 @@ function CalcularPrecio ()
     if (cantLamparitas >= 6) {
         precioLamparitas = (35 * parseInt(cantLamparitas)) - ((35 * parseInt(cantLamparitas)) * 0.5);
         document.getElementById("precioDescuento").value = precioLamparitas;
+        
+    } else {
+        if (cantLamparitas==5 && marca=="ArgentinaLuz") {
+            precioLamparitas = (35 * parseInt(cantLamparitas)) - ((35 * parseInt(cantLamparitas)) * 0.4);
+            document.getElementById("precioDescuento").value = precioLamparitas;
+        
+        } else {
+            if (cantLamparitas==5 && marca!="ArgentinaLuz") {
+                precioLamparitas = (35 * parseInt(cantLamparitas)) - ((35 * parseInt(cantLamparitas)) * 0.3);
+                document.getElementById("precioDescuento").value = precioLamparitas;
+            
+            } else {
+                if (cantLamparitas==4 && marca=="ArgentinaLuz" || marca=="FelipeLamparas") {
+                    precioLamparitas = (35 * parseInt(cantLamparitas)) - ((35 * parseInt(cantLamparitas)) * 0.25);
+                    document.getElementById("precioDescuento").value = precioLamparitas;
+                
+                } else {
+                        precioLamparitas = (35 * parseInt(cantLamparitas)) - ((35 * parseInt(cantLamparitas)) * 0.20);
+                        document.getElementById("precioDescuento").value = precioLamparitas;
+
+                    } if (cantLamparitas==3 && marca=="ArgentinaLuz") {
+                        precioLamparitas = (35 * parseInt(cantLamparitas)) - ((35 * parseInt(cantLamparitas)) * 0.15);
+                        document.getElementById("precioDescuento").value = precioLamparitas;
+                    
+                    } else {
+                        if (cantLamparitas==3 && marca=="FelipeLamparas") {
+                            precioLamparitas = (35 * parseInt(cantLamparitas)) - ((35 * parseInt(cantLamparitas)) * 0.10);
+                            document.getElementById("precioDescuento").value = precioLamparitas;
+                            
+                            } else {
+                            precioLamparitas = (35 * parseInt(cantLamparitas)) - ((35 * parseInt(cantLamparitas)) * 0.05);
+                            document.getElementById("precioDescuento").value = precioLamparitas;
+                    
+                                } if (precioLamparitas >= 120) {
+                                precioFinal = partseInt(precioLamparitas) + ((parseInt(precioLamparitas * 0.1)));
+                                alert(precioFinal);
+                        }
+                }
+            }
+        }
     }
 }
