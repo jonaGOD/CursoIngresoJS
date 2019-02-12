@@ -11,14 +11,16 @@ var alambre;
 
 function Rectangulo () 
 {
-    largo = document.getElementById("largo").value;
-    ancho = document.getElementById("ancho").value;
-    alambre = 2*(parseInt(largo)*parseInt("ancho"))*3;
+    largo = document.getElementById("Largo").value;
+    ancho = document.getElementById("Ancho").value;
+    alambre = 2*(parseInt(largo)*parseInt(ancho))*3;
     alert(alambre);
 }
 function Circulo () 
 {
-	
+	radio = document.getElementById("Radio").value;
+    alambre = 2 * Math.PI * radio;
+    alert(alambre);
 }
 function Materiales () 
 {
