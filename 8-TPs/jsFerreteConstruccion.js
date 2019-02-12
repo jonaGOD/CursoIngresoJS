@@ -8,6 +8,8 @@ var largo;
 var ancho;
 var radio;
 var alambre;
+var cemento;
+var cal;
 
 function Rectangulo () 
 {
@@ -24,5 +26,9 @@ function Circulo ()
 }
 function Materiales () 
 {
-	
+	largo = document.getElementById("Largo").value;
+    ancho = document.getElementById("Ancho").value;
+    cemento = (parseInt(largo)*parseInt(ancho))*2;
+    cal = (parseInt(largo)*parseInt(ancho))*3;
+    alert("Se necestian "+cemento+" bolsas de cemento y "+cal+" bolsas de cal");
 }
