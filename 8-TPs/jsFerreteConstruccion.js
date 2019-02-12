@@ -15,7 +15,7 @@ function Rectangulo ()
 {
     largo = document.getElementById("Largo").value;
     ancho = document.getElementById("Ancho").value;
-    alambre = 2*(parseInt(largo)*parseInt(ancho))*3;
+    alambre = 2*(parseInt(largo)+parseInt(ancho))*3;
     alert(alambre);
 }
 function Circulo () 

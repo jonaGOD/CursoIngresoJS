@@ -9,13 +9,13 @@ var fahrenheit;
 function FahrenheitCentigrados () 
 {
     fahrenheit = document.getElementById("Temperatura").value;
-    centigrados = (parseInt(fahrenheit) - 32) / 1,8;
+    centigrados = (parseInt(fahrenheit) - 32) / 1.8;
     alert(fahrenheit+"° Fahrenheit son "+centigrados+"° Centigrados.");
 }
 
 function CentigradosFahrenheit () 
 {
     centigrados = document.getElementById("Temperatura").value;
-    fahrenheit = (parseInt(centigrados) * (9/5)) + 32;
+    fahrenheit = (parseInt(centigrados) * 1.8) + 32;
     alert(centigrados+"° Centirgrados son "+fahrenheit+"° Fahrenheit.");
 }
