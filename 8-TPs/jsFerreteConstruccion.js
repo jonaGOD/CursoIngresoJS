@@ -4,9 +4,17 @@ B.	mostrar la cantidad de alambre a comprar  si se ingresara el radio  de un ter
 C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
 */
 
+var largo;
+var ancho;
+var radio;
+var alambre;
+
 function Rectangulo () 
 {
-
+    largo = document.getElementById("largo").value;
+    ancho = document.getElementById("ancho").value;
+    alambre = 2*(parseInt(largo)*parseInt("ancho"))*3;
+    alert(alambre);
 }
 function Circulo () 
 {

@@ -10,6 +10,6 @@ function mostrar()
                 alert("La persona es mayor de edad");
                 } else {
                 alert("La persona es adolescente");
-    }
-    }
+                }
+                }
 }//FIN DE LA FUNCIÓN
