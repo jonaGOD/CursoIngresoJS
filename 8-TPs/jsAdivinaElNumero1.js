@@ -15,12 +15,11 @@ function comenzar()
 	//Genero el número RANDOM entre 1 y 100
 	 numeroSecreto = Math.floor(Math.random() * (101 - 1) + 1);
 		//alert(numeroSecreto );
+    contadorIntentos = 0;
 }
 
 function verificar()
 {
-	contadorIntentos = 0;
   contadorIntentos++;
   document.getElementById("intentos") = contadorIntentos;
-
 }
