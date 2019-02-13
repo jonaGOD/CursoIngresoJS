@@ -15,14 +15,45 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
-	
-
+	numeroSecreto = Math.floor(Math.random() * (101 - 1) + 1);
+	contadorIntentos = 0;
 }
 
 function verificar()
 {
-	
-	
+	contadorIntentos++;
+	document.getElementById("intentos").value = contadorIntentos;
+
+	if (contadorIntentos==1) {
+		alert("Usted es psíquico");
+		
+		} else {
+			if (contadorIntentos==2) {
+				alert("Exelente percepción");
+
+			} else {
+				if (contadorIntentos==3) {
+					alert("Esto es suerte");
+
+				} else {
+					if(contadorIntentos==4) {
+						alert("Excelente técnica");
+
+					} else {
+						if (contadorIntentos==5) {
+							alert("Usted está en la media");
+							
+							} else {
+								if (contadorIntentos > 5 && contadorIntentos <= 10) {
+									alert("Falta técnica");
+
+									} else {
+										alert("Afortunado en el amor");
+									}
+							}
+				}
+			}
+		}
+	}
 
 }

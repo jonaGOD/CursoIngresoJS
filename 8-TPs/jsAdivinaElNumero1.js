@@ -9,6 +9,7 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos;
+var numeroIngresado;
 
 function comenzar()
 {
@@ -21,5 +22,20 @@ function comenzar()
 function verificar()
 {
   contadorIntentos++;
-  document.getElementById("intentos") = contadorIntentos;
+  numeroIngresado = document.getElementById("numero").value;
+  document.getElementById("intentos").value = contadorIntentos;
+  
+  if (parseInt(numeroSecreto) == parseInt(numeroIngresado)) {
+    alert("Usted es el ganador");
+    
+    } else {
+
+    if (numeroSecreto > numeroIngresado) {
+      alert("Falta...");
+      
+      } else {
+        alert("Se pasó");
+    }
+  }
+  numeroIngresado = document.getElementById("numero").value;
 }
