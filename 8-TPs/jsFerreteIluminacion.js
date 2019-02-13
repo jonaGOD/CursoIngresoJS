@@ -13,7 +13,6 @@ var cantLamparitas
 var precioLamparitas
 var marca
 var impuesto
-var precioFinal
 
 function CalcularPrecio () 
 {
