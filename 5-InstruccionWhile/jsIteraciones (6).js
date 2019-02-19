@@ -8,11 +8,10 @@ function mostrar()
 
 	while (contador < 4) {
 		++contador
-		acumulador = parseInt(acumulador);
 		numero = prompt("Ingrese un número");
 		acumulador = parseInt(acumulador) + parseInt(numero);
 	}
-	
+
 	document.getElementById('suma').value=acumulador;
 	document.getElementById('promedio').value=acumulador/5;
 
