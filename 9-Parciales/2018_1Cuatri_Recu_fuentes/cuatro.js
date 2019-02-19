@@ -12,15 +12,18 @@ function mostrar()
 
     switch (pagaTarjeta) {
         case "si":
+        case "Si":
+        case "Sí":
+        case "SI":
         if (libros > 2 && precioLibros > 2000) {
-            totalDesc = parseInt(precioLibros) - (parseInt(precioLibros) * 0.1);
-            totalPaga = parseInt(totalDesc) - (parseInt(totalDesc) * 0.15);
-            totalPaga = parseInt(totalPaga) + (parseInt(totalPaga) * 0.1);
+            totalDesc = parseInt(precioLibros) - (parseInt(precioLibros) * 0.25);
+            totalPaga = parseInt(totalDesc) + (parseInt(totalDesc) * 0.1);
             alert("Debe abonar $"+totalPaga);
             
             } else {
                 if (libros > 2) {
-                    totalPaga = parseInt(precioLibros) + (parseInt(precioLibros) * 0.1);
+                    totalDesc = parseInt(precioLibros) - (parseInt(precioLibros) * 0.1);
+                    totalPaga = parseInt(totalDesc) + (parseInt(totalDesc) * 0.1);
                     alert("Debe abonar $"+totalPaga);
                 
                 } else {
@@ -31,10 +34,11 @@ function mostrar()
                 }
             }
         break;
-        default:
+        case "no":
+        case "No":
+        case "NO":
         if (libros > 2 && precioLibros > 2000) {
-            totalDesc = parseInt(precioLibros) - (parseInt(precioLibros) * 0.1);
-            totalPaga = parseInt(totalDesc) - (parseInt(totalDesc) * 0.15);
+            totalPaga = parseInt(precioLibros) - (parseInt(precioLibros) * 0.25);
             alert("Debe abonar $"+totalPaga);
 
             } else {
