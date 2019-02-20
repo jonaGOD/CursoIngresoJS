@@ -5,23 +5,30 @@ function mostrar()
   var numeroIngresado;
   var numeroMinimo;
   var numeroMaximo;
+  var primero;
 	// declarar variables
 
   var respuesta='si';
-
-  numeroMinimo = 0
-  numeroMaximo = 0
+  primero = true;
 
 	while(respuesta!='no') {
     numeroIngresado = prompt("Ingrese el numero");
 
-    if (numeroIngresado >= numeroMaximo) {
+    if (primero) {
       numeroMaximo = numeroIngresado;
+      numeroMinimo = numeroIngresado;
+      primero = false;
 
       } else {
-        if (numeroIngresado <= numeroMinimo) {
-          numeroMinimo = numeroIngresado;
-        }
+        if (numeroIngresado >= numeroMaximo) {
+          numeroMaximo = numeroIngresado;
+
+          } else {
+            if (numeroIngresado <= numeroMinimo) {
+              numeroMinimo = numeroIngresado;
+
+              }
+          }
       }
 		respuesta = prompt("¿Desea ingresar otro numero?");
 	}
