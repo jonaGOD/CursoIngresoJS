@@ -52,14 +52,6 @@
     respuesta = confirm("¿Desde ingresar otro numero?")
   }
 
-  alert("Suma de positivos es "+numeroPositivo);
-  alert("Suma de negativos es "+numeroNegativo);
-  alert("Cantidad de negativos es "+cantidadNegativos);
-  alert("Cantidad de positivos es "+cantidadPositivos);
-  alert("Cantidad de ceros es "+cantidadCeros);
-  alert("La diferencia de positivos y negativos es "+diferenciaPosNeg);
-  alert("El promedio de números negativos es "+promedioNegativo);
-  alert("El promedio de números positivos es "+promedioPositivo);
-  alert("La cantidad de pares es "+cantidadPares);
+  document.write("Suma de positivos es "+numeroPositivo+". La suma de negativos es "+numeroNegativo+". Cantidad de negativos es "+cantidadNegativos+". Cantidad de positivos es "+cantidadPositivos+". Cantidad de ceros es "+cantidadCeros+". La diferencia de positivos y negativos es "+diferenciaPosNeg+". El promedio de números negativos es "+promedioNegativo+". El promedio de números positivos es "+promedioPositivo+". La cantidad de pares es "+cantidadPares);
 
 }//FIN DE LA FUNCIÓN
