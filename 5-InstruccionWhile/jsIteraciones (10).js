@@ -10,7 +10,7 @@
   var cantidadCeros=0;
   var cantidadPares=0;
   var promedioPositivo=0;
-  var promedioNegativo=0  ;
+  var promedioNegativo=0;
   var diferenciaPosNeg;
 
 	//declarar contadores y variables
