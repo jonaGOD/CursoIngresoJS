@@ -1,22 +1,26 @@
 function mostrar()
 {
-    var num1
-    var num2
-    var num3
+    var num1;
+    var num2;
+    var numSuma;
 
-    num1 = prompt("Ingrese el primer número.")
-    num2 = prompt("Ingrese el segundo número.")
+    num1 = prompt("Ingrese el primer numero");
+    num2 = prompt("Ingrese el segundo numero");
 
     if (num1 == num2) {
         alert(num1+num2);
     } else {
         if (num1 > num2) {
-            num3 = parseInt(num1) - parseInt(num2);
-            alert(num3);
+            num1 = parseInt(num1) - parseInt(num2);
+            alert(num1);
         } else {
-            num3 = parseInt(num1) + parseInt(num2);
-        } if (num3 > 10) {
-            alert("La suma es "+num3+" y supera 10.");
+            if (num1 < num2) {
+                numSuma = parseInt(num1) + parseInt(num2);
+                alert(numSuma);
+            }
         }
+    }
+    if (numSuma > 10) {
+        alert("La suma es "+numSuma+" y supero el 10");
     }
 }

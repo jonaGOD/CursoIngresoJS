@@ -1,30 +1,27 @@
 function mostrar()
 {
-    var planeta
-    planeta = prompt("Ingrese un planeta");
+    var planeta;
 
-    switch(planeta) {
+    planeta = prompt("Ingrese el planeta");
+
+    switch (planeta) {
         case "tierra":
-        alert("Acá vivimos");
+        alert("Aca vivimos.");
         break;
         case "mercurio":
         case "venus":
-        alert("Acá hace más calor");
+        alert("Aca hace mas calor.");
         break;
         case "marte":
-        case "jupiter":
         case "ceres":
+        case "jupiter":
         case "saturno":
         case "urano":
         case "neptuno":
-        case "plutón":
-        case "huamea":
-        case "makemake":
-        case "eris":
-        alert("Acá hace más frío");
+        alert("Aca hace mas frio.");
         break;
         default:
-        alert("No es un planeta válido");
+        alert("No es un planeta valido.");
         break;
     }
 }
